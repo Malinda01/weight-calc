@@ -3,66 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible"
-    content="ie-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Weight Calc</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-        body{
-            margin-top:70px;
-            background: #333;
-            color:#fff
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin-top: 70px;
+            background: #333;
+            color: #fff;
+        }
+
+        .card {
+            margin-top: 15px;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h1 class="display-3 text-center">Weight Convertor</h1>
-                <form>
-                    <div class="form-group">
-                        <input 
-                        id="amtInput" 
-                        type="number" 
-                        class="form-control form-control-lg" 
-                        placeholder="Enter Amount...">
-                    </div>
-                </form>
 
-                <div id="output">
-                    <!-- Card section -->
-                    <div class="card card-primary">
-                        <div class="card-block">
-                            <h4>Grams: </h4>
-                            <div id="gramsOutput">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
 
-                            </div>
-                        </div>
-                    </div>
+            <h1 class="display-5 text-center mb-4">Weight Converter</h1>
 
-                    <div class="card card-success">
-                        <div class="card-block">
-                            <h4>Kilograms: </h4>
-                            <div id="kgOutput">
-                                
-                            </div>
-                        </div>
-                    </div>
+            <input 
+                id="amtInput"
+                type="number"
+                class="form-control form-control-lg mb-4"
+                placeholder="Enter Amount..."
+            >
 
-                    <div class="card card-danger">
-                        <div class="card-block">
-                            <h4>Ounses: </h4>
-                            <div id="ozOutput">
-                                
-                            </div>
-                        </div>
+            <div id="output">
+
+                <!-- Grams -->
+                <div class="card bg-primary text-white">
+                    <div class="card-body">
+                        <h4>Grams</h4>
+                        <div id="gramsOutput"></div>
                     </div>
                 </div>
+
+                <!-- Kilograms -->
+                <div class="card bg-success text-white">
+                    <div class="card-body">
+                        <h4>Kilograms</h4>
+                        <div id="kgOutput"></div>
+                    </div>
+                </div>
+
+                <!-- Ounces -->
+                <div class="card bg-danger text-white">
+                    <div class="card-body">
+                        <h4>Ounces</h4>
+                        <div id="ozOutput"></div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     </div>
+</div>
+
 </body>
 </html>
